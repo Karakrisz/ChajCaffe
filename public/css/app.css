@@ -1,4 +1,15 @@
-/******************** Boaz start **********************/
+/********************  Boaz formating start **********************/
+
+
+/* body,
+html {
+    overflow-x: hidden;
+} */
+
+body {
+    max-width: 2570px;
+    margin: auto;
+}
 
 *,
 :after,
@@ -6,5 +17,447 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
 
-/******************** Boaz end **********************/
+p {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.float-right {
+    float: right;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.text-transform-uppercase {
+    text-transform: uppercase
+}
+
+.t-end {
+    text-align: end;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/********************  Header formating start **********************/
+
+header,
+.splide {
+    background-image: url(../img/header/header-bg.webp);
+    background-size: cover;
+}
+
+.navbar {
+    align-items: center;
+    max-width: 100%;
+}
+
+.navbar__bg-div {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+.navbar-logo-box {
+    width: 40%;
+}
+
+.navbar-logo-box__img {
+    width: 25%;
+    left: 17%;
+    top: 105px;
+    z-index: 10;
+}
+
+.navbar__one-img {
+    left: 1.9%;
+    top: 0;
+    opacity: 0.29;
+    width: 45%;
+    z-index: 10;
+}
+
+.splide__track,
+.menu {
+    z-index: 100;
+}
+
+.menu {
+    list-style: none;
+    background-color: #e2d8a8;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 3.5em;
+    width: 60%;
+    min-height: 4rem;
+    justify-content: start;
+}
+
+.menu.active {
+    right: 0;
+}
+
+.menu li {
+    padding-right: 3.7em;
+}
+
+.menu__elem--pr-0 {
+    padding-right: 0 !important;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header__right-box__div__link,
+.menu li a {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+
+/********************  Header formating end **********************/
+
+
+/********************  Slider formating start **********************/
+
+.splide__arrow,
+.splide__pagination {
+    z-index: 105;
+}
+
+.splide__slide img {
+    width: 100%;
+}
+
+
+/********************  Slider formating end **********************/
+
+
+/********************  Events formating start **********************/
+
+.events,
+.about,
+.welcome-shop {
+    background-image: url(../img/page-bg.webp);
+    background-size: cover;
+}
+
+.events,
+.welcome-shop {
+    padding: 0 4% 7em 4%;
+}
+
+.events__h1,
+.page-link,
+a,
+.footer-content__text-box__h3,
+.welcome-shop__h2 {
+    color: #e2d8a8;
+}
+
+.events__h1 {
+    padding: 2em 0;
+}
+
+.events__content__box {
+    width: 34%;
+}
+
+.events__content__box__img,
+.welcome-shop__content__box__img {
+    width: 100%;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+}
+
+.events__content__box--margin,
+.welcome-shop__content__box--margin {
+    margin: 0 0.5em;
+}
+
+.events__content__box__text-box {
+    color: #fff;
+}
+
+.welcome-shop__content__box__text-box,
+.events__content__box__text-box {
+    padding: 2em;
+    margin-top: -4px;
+}
+
+.events__link-box {
+    margin-top: 4em;
+}
+
+.events__content__box__link {
+    float: right;
+}
+
+.events__content__box__p,
+.welcome-shop__content__box__p {
+    font-weight: 300;
+    margin: .7em 0;
+}
+
+.events__content__box__p,
+.welcome-shop__content__box__p,
+.about__content__text-box__p {
+    font-weight: 300;
+}
+
+.events__content__box__text-box {
+    height: 220px;
+}
+
+.welcome-shop__content__box__text-box,
+.events__content__box__text-box {
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+}
+
+.page-link {
+    border: 1px solid;
+    padding: 0.5em 1.3em;
+    border-radius: 20px;
+}
+
+.page-link__img {
+    width: 13px;
+    height: 13px;
+    margin-left: 5px;
+    top: 2px;
+}
+
+
+/********************  Events formating end **********************/
+
+
+/********************  About formating start **********************/
+
+.about {
+    padding-bottom: 3em;
+}
+
+.about__content,
+.footer-content {
+    align-items: center;
+}
+
+.about__content__text-box {
+    background-image: url(../img/about/about-bg.webp);
+    padding: 4.7em 4em;
+}
+
+.about__content__one-text-box,
+.about__content__two-text-box {
+    width: 70%;
+}
+
+.about__content__one-img-box {
+    margin-left: -4%;
+}
+
+.about__content__one-img-box,
+.about__content__two-img-box {
+    width: 30%;
+}
+
+.about__content__img-box__img {
+    width: 100%;
+    border-radius: 50%;
+    border: 9px solid #fff;
+}
+
+.about__content__text-box__p {
+    width: 85%;
+}
+
+.about__content__text-box__bg-box {
+    background-color: #e2d8a8;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5;
+}
+
+.about__content__two-text-box,
+.footer-content__text-box {
+    text-align: end;
+}
+
+.about__content__two-text-box__p {
+    width: 70%;
+    float: right;
+    color: #4F2C4A;
+}
+
+.about__content__two-img-box {
+    right: -4%;
+    z-index: 10;
+}
+
+.about__content--margin-b {
+    margin-bottom: 3em;
+}
+
+.about__content__text-box__h2 {
+    margin-bottom: 0.5em;
+}
+
+
+/********************  About formating end **********************/
+
+
+/********************  Welcome shop formating start **********************/
+
+.welcome-shop__h2 {
+    padding-bottom: 2.3em;
+}
+
+.welcome-shop__content__box {
+    width: 25%;
+}
+
+.welcome-shop__content__box__text-box {
+    background: #fff;
+}
+
+.welcome-shop__h2 {
+    padding-bottom: 2.3em;
+}
+
+.welcome-shop {
+    padding-bottom: 13em;
+}
+
+
+/********************  Welcome shop formating end **********************/
+
+
+/********************  Footer formating start **********************/
+
+.footer-content,
+.copyright,
+.events__content__box__text-box {
+    background: #391d35;
+}
+
+.footer-content {
+    justify-content: space-evenly;
+}
+
+.footer-content__text-box,
+.footer-content__link-box {
+    width: 35%;
+}
+
+.footer-content__logo-box {
+    width: 20%;
+}
+
+.footer-content__logo-box__img {
+    width: 65%;
+    margin: auto;
+    display: block;
+    margin-top: -25%;
+}
+
+.footer-content__text-box__h3 {
+    padding-bottom: .9em;
+}
+
+.copyright__h4 {
+    color: #fff;
+    padding: 3em 0 1em 0;
+}
+
+
+/********************  Footer formating end **********************/
+
+
+/********************  Media start **********************/
+
+@media screen and (max-width: 767px) {
+    .hamburger {
+        display: flex;
+    }
+    .menu.hidden {
+        display: none;
+    }
+    .menu {
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    .menu.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .menu li {
+        margin: 10px;
+    }
+    .navbar.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .navbar.active .bar:first-child {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .navbar.active .bar:last-child {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+/********************  Media end **********************/
+
+
+/********************  Boaz formating end **********************/

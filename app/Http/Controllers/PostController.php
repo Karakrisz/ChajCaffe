@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use TCG\Voyager\Models\Post;
+use App\Models\Image;
 // use TCG\Voyager\Models\Category;
-
 
 class PostController extends Controller
 {
@@ -15,8 +14,9 @@ class PostController extends Controller
 
         // $posts = Post::with('category')->get();
         $posts = Post::with('category')->latest()->take(3)->get();
-
-        return view('welcome', compact('posts'));
+        $images = Image::latest()->take(4)->get();
+        
+        return view('welcome', compact('posts' , 'images'));
     }
 
     public function show(Post $post)
@@ -29,6 +29,5 @@ class PostController extends Controller
         $posts = Post::with('category')->latest()->take(3)->get();
         return response()->json($posts);
     }
-    
 
 }
