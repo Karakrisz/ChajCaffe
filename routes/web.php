@@ -29,6 +29,7 @@ Route::get('/header', 'HeaderFooterController@getHeaderContent');
 // Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index']);
 Route::get('/', [PostController::class, 'index']);
 Route::get('/post/{post}', [PostController::class, 'show'])->name('post.show');
+Route::get('/image/{image}', [PostController::class, 'showImage'])->name('image.show');
 
 Route::get('/json-posts', [PostController::class, 'jsonPosts']);
 

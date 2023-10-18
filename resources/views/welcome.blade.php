@@ -30,8 +30,11 @@
                     alt="{{ $post->title }}">
                 <div class="events__content__box__text-box">
                     <h2 class="events__content__box__h2">{{ $post->title }}</h2>
-                    <p class="events__content__box__p">{{ \Illuminate\Support\Str::limit($post->body, 100) }}</p>
-                    <a class="events__content__box__link" href="{{ route('post.show', ['post' => $post]) }}">Tovább</a>
+                    <p class="events__content__box__p">
+                        {{ \Illuminate\Support\Str::limit(strip_tags($post->body), 100) }}
+                    </p>
+                    <a class="events__content__box__link" href="{{ route('post.show', ['post' => $post]) }}"><img
+                            src="img/events.svg" alt="chajcafe"></a>
                 </div>
             </div>
         </div>
@@ -52,6 +55,10 @@
 
         <div class="about__content__text-box about__content__one-text-box position-relative">
             <div class="about__content__text-box__bg-box position-absolute"></div>
+            <div class="about__content__one-text-box__img-box d-flex position-relative">
+                <img class="about__content__one-text-box__img-box__img" src="img/about/Layer_1.svg" alt="chajcafe">
+                <img class="about__content__one-text-box__img-box__img" src="img/about/Layer_2.svg" alt="chajcafe">
+            </div>
             <h2 class="about__content__text-box__h2 position-relative">About us</h2>
             <p class="about__content__text-box__p position-relative">The Chaj gallery was founded the fall of 2019 by
                 Rabbi Mendy and
@@ -77,6 +84,10 @@
 
         <div class="about__content__text-box about__content__two-text-box position-relative">
             <div class="about__content__text-box__bg-box position-absolute"></div>
+            <div class="about__content__two-text-box__img-box d-flex position-relative">
+                <img class="about__content__two-text-box__img" src="img/about/Layer_1.svg" alt="chajcafe">
+                <img class="about__content__two-text-box__img" src="img/about/Layer_2.svg" alt="chajcafe">
+            </div>
             <h2 class="about__content__text-box__h2 about__content__two-text-box__h2 position-relative">Chaj Café</h2>
             <p class="about__content__text-box__p about__content__two-text-box__p position-relative">Kosher cafe
                 offering Kosher food for body, mind and soul, and cultural programs. And coffee. Lot's of
@@ -99,8 +110,12 @@
                 <div class="welcome-shop__content__box__text-box">
                     <h2 class="welcome-shop__content__box__text-box__h2">{{ $image->title }}</h2>
                     <p class="welcome-shop__content__box__p">
-                        {{ \Illuminate\Support\Str::limit($image->description, 100) }}
+                        {{ \Illuminate\Support\Str::limit(strip_tags($image->description), 100) }}
                     </p>
+                    <a class="welcome-shop__content__box__text-box__link"
+                        href="{{ route('image.show', ['image' => $image]) }}">
+                        <img src="img/shop.svg" alt="chajcafe">
+                    </a>
                     <h5 class="welcome-shop__content__box__text-box__h5">{{ $image->price }} Ft</h5>
                 </div>
             </div>
